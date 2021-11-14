@@ -1,5 +1,5 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
-  var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+  var countDownDate = new Date("Feb 1, 2022 00:00:00").getTime();
   var x = setInterval(function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -15,10 +15,10 @@
 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("ngay").innerHTML = "EXPIRED";
-      document.getElementById("gio").innerHTML = "EXPIRED";
-      document.getElementById("phut").innerHTML = "EXPIRED";
-      document.getElementById("giay").innerHTML = "EXPIRED";
+      document.getElementById("ngay").innerHTML = "0";
+      document.getElementById("gio").innerHTML = "0";
+      document.getElementById("phut").innerHTML = "0";
+      document.getElementById("giay").innerHTML = "0";
     }
   }, 1000);
 
